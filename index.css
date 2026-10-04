@@ -25,6 +25,7 @@ li{
     width: 100vw;
     margin-bottom: 5em;
     overflow-x: hidden;
+    margin-left: 0px;
 }
 
 nav {
@@ -611,6 +612,12 @@ footer{
 
     .grid-box {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .logo{
+        width: 6rem;
+    }
+    .bigbro{
+        margin-left: 0px;
     }
 }
 
