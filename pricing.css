@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+body {
+    background: #FDFBF7;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav{
+    margin-left: 10vw;
+    max-width: 80vw;
+}
+
+ul li a small {
+    color: #848088;
+    margin-left: 4em;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+   }
+
+
+.flexer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10vw;
+    max-width: 80vw;
+    flex-wrap: wrap;
+    justify-items: stretch;
+}
+
+.flexers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pinky {
+    margin-left: 10vw;
+    max-width: 80vw;
+    background: #BF3D6C;
+    color: white;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.app{
+    width: 6em;
+    margin-bottom: 1em;
+}
+
+
+.flexers div ul li {
+    margin-bottom: 1rem;
+}
+
+.qr {
+    float: right;
+}
+
+footer {
+    margin-left: 10vw;
+    max-width: 80vw;
+    color: #6B6776;
+    margin-bottom: 6em;
+}
+
+.biz {
+    padding: .3em;
+    background: rgb(177, 214, 246);
+    border-radius: 1em;
+}
+
+.yh {
+    background-color: #F9F1E7;
+}
+
+.yes {
+    background-color: #FFFAF5;
+}
+
+.d-flex ul li a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.style {
+    background: white;
+    border: 1px solid gray;
+    padding: 2em;
+    margin-left: 10vw;
+    max-width: 80vw;
+    border-radius: 2em;
+}
+
+.apply {
+    background: rgb(187, 64, 86);
+    border: 2px solid rgb(187, 64, 86);
+    border-radius: 20px;
+    padding: .5em;
+    color: white;
+}
+
+.right{
+    float: right;
+}
+
+
+@media (max-width:990px) {
+
+    .apply {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .billions {
+        margin-left: 5vw;
+    }
+
+    .hero-section {
+        margin-left: 1em;
+        max-width: 100vw;
+        margin-right: 1em;
+    }
+
+    .wrapper {
+        margin-left: 1em;
+        max-width: 100vw;
+        margin-right: 1em;
+    }
+
+    .loan-card {
+        flex-direction: column;
+    }
+
+    .business {
+        display: none;
+    }
+
+    .personal {
+        display: none;
+    }
+
+    .end {
+        margin-top: none;
+    }
+
+    body {
+        margin: none;
+        width: 100vw;
+
+    }
+    .style{
+        max-width: 100vw;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+
+}
+
+@media (max-width:600px) {
+    td{
+        display: block;
+    }
+    .poof{
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .man {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+@media (max-width:770px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stuff {
+        display: none;
+    }
+
+    .stuffy {
+        display: none;
+    }
+}
+
+@media (min-width:770px) {
+    .gh {
+        display: none;
+    }
+
+    .ng {
+        display: none;
+    }
+}
+
+@media (max-width:460px) {
+    .call {
+        display: block;
+        width: 90%;
+    }
+
+    .loan {
+        display: block;
+        width: 90%;
+    }
+
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo{
+        width: 8rem;
+    }
+}
+
+@media (min-width:993px) {
+    .noner {
+        display: none;
+    }
+}

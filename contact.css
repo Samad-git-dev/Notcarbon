@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    max-width: 100vw;
+
+}
+
+nav{
+    background-color: #2C1762;
+    position:fixed;
+    top: 0px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.sharp:hover{
+    color: rgb(187, 64, 86);
+}
+.cards{
+    background:white;
+    padding: 2em;
+    flex: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 280px;
+}
+.parent{
+    gap: 2em;
+    margin-top: 5em;
+     background:#EDECEC;
+     display: flex;
+     padding: 2em;
+     justify-items: center;
+     width: fit-content;
+     flex-wrap: wrap;
+      margin-bottom: 8rem;
+}
+
+.footer{
+    background: #5D2ECE;
+}
+
+.flexers ul li{
+    margin-bottom: .5rem;
+}
+
+.cards a{
+    position: absolute;
+    bottom: 2em;
+    text-decoration: none;
+}
+
+.cards a:hover{
+    text-decoration: underline;
+}
+
+.blue{
+    filter:invert(21%) sepia(85%) saturate(3990%) hue-rotate(253deg) brightness(85%) contrast(92%);
+}
+
+.pinky{
+    background-color: #FFE5F1;
+    border-radius: 2em;
+    padding: 3em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.purple-section{
+    background-color:#2C1762;
+    padding: 10vw;
+    color: white;
+}
+
+.jump{
+    animation-name: Jump; animation-duration: 3s; animation-delay: 3s; animation-iteration-count: 1;
+}
+
+@keyframes Jump {
+    from{
+        transform: translate(0,10px);
+    }
+}
+
+.icon{
+    width: 2em;
+}
+
+.arrow{
+    margin-left: -2em;
+}
+
+.flex{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1em; 
+}
+
+.signup{
+    border-radius: .5em;
+    padding: 1.5em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    color: #2C1762;
+    border: none;
+}
+
+li a{
+text-decoration: none;
+}
+
+.flexer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-items: stretch;
+}
+
+.flexers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.blu{
+    color: #6b32ef;
+}
+
+.flexers ul li{
+    list-style-type: none;
+}
+
+li{
+    color: white;
+}
+
+
+.qr{
+    width:40%;
+   min-width: 8rem;
+   float: right;
+}
+
+.app{
+    width: 6em;
+    margin-bottom: 1em;
+}
+
+.right{
+    float: right;
+}
+
+.icons{
+    width: 1em;
+}
+
+.style{
+    background-color: transparent;
+    padding: .5em;
+    border: none;
+    width: 4em;
+    height: 4em;
+}
+
+.style:hover{
+    background: #5D2ECE;
+    border-radius: 4em;
+}
+
+
+
+
+select{
+    background: transparent;
+    border: 1px solid #5D2ECE;
+    padding: .5em;
+    color: #5D2ECE;
+    image-rendering: pixelated;
+}
+
+
+@media (max-width:992px) {
+    .signup{
+        border: none;
+        background: none;
+        color: white;
+    }
+    .flex{
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+@media (min-width: 991px) {
+    .none{
+        display: none;
+    }
+}
+
+@media (max-width:586px) {
+    .icon{
+        width: 1.2em;
+        margin-right: .4em;
+    }
+    .right{
+        float: none;
+    }
+}
+
+.white{
+    color: white;
+    text-decoration: none;
+}
+
+.white:hover{
+    color: #5D2ECE;
+}
