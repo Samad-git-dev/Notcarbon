@@ -246,3 +246,10 @@ select{
 .white:hover{
     color: #5D2ECE;
 }
+
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Prevents a small gap that closes the menu when moving the mouse */
+  }
+}

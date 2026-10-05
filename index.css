@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    max-width: 100vw;
+    max-width: inherit;
 }
 
 body {
@@ -614,7 +614,7 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
     .logo{
-        width: 6rem;
+        width: 10rem;
     }
     .bigbro{
         margin-left: 0px;
@@ -626,3 +626,11 @@ footer{
         display: none;
     }
 }
+/* Apply hover effect only on desktop screens (768px or wider) */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Prevents a small gap that closes the menu when moving the mouse */
+  }
+}
+
