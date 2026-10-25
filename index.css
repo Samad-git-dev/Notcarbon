@@ -46,7 +46,7 @@ nav {
     flex-wrap: nowrap;
     width: 100vw;
     animation-name: Play;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-delay: 20ms;
 }
@@ -626,11 +626,9 @@ footer{
         display: none;
     }
 }
-/* Apply hover effect only on desktop screens (768px or wider) */
-@media (min-width: 768px) {
+
   .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; /* Prevents a small gap that closes the menu when moving the mouse */
   }
-}
 
