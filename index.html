@@ -156,14 +156,14 @@
                 <div class="col-12 col-md-6 my-md-auto">
                     <span class="bold">Loan Calculator</span> <br><br>
                     <h2 class="large">Know the numbers before you commit.</h2>
-                    Pick your amount, choose your tenor, and see what your repayments will be <br><br><br><br>
+                    Pick your amount, choose your tenor, and see what your repayments will be. <br><br><br><br>
                     Want more information before you apply?<br><br>
                     <button class="call">Request a call back</button>
                 </div>
                 <div class="col-12 col-md-6 kill"><br>
                     <div class="">Loan amount</div>
-                    <div class="mt-2 mb-2 naira">₦500,000</div>
-                    <input type="range" name="Loan" id="Loan" class="hr mb-4">
+                    <div class="mt-2 mb-2 naira" id="outPut">₦500,000</div>
+                    <input type="range" name="Loan" id="loan" class="hr mb-4" value="500000" step="100000" min="500000" max="9500000" oninput="inPut()">
                     <div class="grid-box">
                         <div class="grid-member">1 month</div>
                         <div class="grid-member x">3 months</div>
@@ -177,7 +177,7 @@
                         <hr>
                         <div class="grid">
                             <div class="mb-3 grid-kid"><span class="text-body-tertiary left">Principal</span> <span
-                                    class="right bold">₦500,000</span></div>
+                                    class="right bold" id="principal">₦500,000</span></div>
                             <div class="mb-3 grid-kid"><span class="text-body-tertiary left">Total interest(est.
                                     5%/mo)</span> <span class="right bold">₦75,000</span></div>
                             <div class="mb-3 grid-kid"><span class="text-body-tertiary left">Total repayment</span>
@@ -693,5 +693,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+    <script>
+
+        function formatWithComma(num) {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+        function inPut () {
+            let outPut = document.getElementById('outPut');
+        let range = document.getElementById('loan');
+
+        outPut.innerText = '₦' + formatWithComma(range.value);
+        principal.innerText = outPut.innerText
+        }
+
+    </script>
+
 
 </html>
