@@ -240,10 +240,6 @@ nav {
     padding: .5em;
 }
 
-.x {
-    background-color: #3B6DFF;
-}
-
 .grid-member:hover {
     background-color: rgb(160, 21, 46);
     color: white;
@@ -372,6 +368,28 @@ nav {
     border-radius: 1em;
 }
 
+.firstBtn{
+    background-color: white;
+    border: none;
+    border-radius: .3rem;
+    padding: .3rem .5rem;
+    flex: 1;
+    margin-bottom: .3rem;
+}
+
+.firstBtn:hover{
+    background-color: #BF3D6C;
+}
+
+.Myflex{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .stuffy{
     padding: 1em;
     border-radius: 1em;
@@ -420,6 +438,19 @@ nav {
     margin-left: 10vw;
     padding-top: 4em;
     max-width: 80vw;
+}
+
+.x {
+    border: none;
+    border-radius: .3rem;
+    padding: .3rem .5rem;
+    flex: 1;
+    margin-bottom: .3rem;
+    background: #3B6DFF;
+}
+
+.x :hover {
+    background: #3B6DFF;
 }
 
 .bgc{
